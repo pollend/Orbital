@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4EFC0A00-650B-40C3-A5BA-7327B483E30A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ProjectOrbital</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\ThirdParty\SFML-2.0-rc\include;..\ThirdParty\Box2D\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\ThirdParty\SFML-2.0-rc\lib;..\ThirdParty\Box2D\lib\Debug;$(LibraryPath)</LibraryPath>
+    <TargetName>Momentus</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\ThirdParty\SFML-2.0-rc\include;..\ThirdParty\Box2D\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\ThirdParty\SFML-2.0-rc\lib;..\ThirdParty\Box2D\lib\Release;$(LibraryPath)</LibraryPath>
+    <TargetName>Momentus</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;SFML_DYNAMIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-audio-d.lib;sfml-system-d.lib;sfml-window-d.lib;sfml-network-d.lib;Box2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-audio.lib;sfml-system.lib;sfml-window.lib;sfml-network.lib;sfml-main.lib;Box2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Asteroid.cpp" />
+    <ClCompile Include="Background.cpp" />
+    <ClCompile Include="Btn.cpp" />
+    <ClCompile Include="CollectorBeam.cpp" />
+    <ClCompile Include="CompletionScreen.cpp" />
+    <ClCompile Include="Cursor.cpp" />
+    <ClCompile Include="GameOverScreen.cpp" />
+    <ClCompile Include="GameScreen.cpp" />
+    <ClCompile Include="GameScreenHud.cpp" />
+    <ClCompile Include="GameScreenMenu.cpp" />
+    <ClCompile Include="GameWorld.cpp" />
+    <ClCompile Include="Harpoon.cpp" />
+    <ClCompile Include="HelpScreen.cpp" />
+    <ClCompile Include="MainMenuBackground.cpp" />
+    <ClCompile Include="Mine.cpp" />
+    <ClCompile Include="Mission.cpp" />
+    <ClCompile Include="MusicManager.cpp" />
+    <ClCompile Include="Notification.cpp" />
+    <ClCompile Include="OptionsMenu.cpp" />
+    <ClCompile Include="OrbitsContactListener.cpp" />
+    <ClCompile Include="OrbitalMain.cpp" />
+    <ClCompile Include="OrbitsMath.cpp" />
+    <ClCompile Include="ParticleManager.cpp" />
+    <ClCompile Include="PhysicsManager.cpp" />
+    <ClCompile Include="Planet.cpp" />
+    <ClCompile Include="PlayerShip.cpp" />
+    <ClCompile Include="ScreenManager.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="Slider.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="StartScreen.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Asteroid.h" />
+    <ClInclude Include="Background.h" />
+    <ClInclude Include="Btn.h" />
+    <ClInclude Include="CollectorBeam.h" />
+    <ClInclude Include="CompletionScreen.h" />
+    <ClInclude Include="Cursor.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameOverScreen.h" />
+    <ClInclude Include="GameScreen.h" />
+    <ClInclude Include="GameScreenHud.h" />
+    <ClInclude Include="GameScreenMenu.h" />
+    <ClInclude Include="GameWorld.h" />
+    <ClInclude Include="Harpoon.h" />
+    <ClInclude Include="HelpScreen.h" />
+    <ClInclude Include="IScreen.h" />
+    <ClInclude Include="MainMenuBackground.h" />
+    <ClInclude Include="Mine.h" />
+    <ClInclude Include="Mission.h" />
+    <ClInclude Include="MusicManager.h" />
+    <ClInclude Include="Notification.h" />
+    <ClInclude Include="OptionsMenu.h" />
+    <ClInclude Include="OrbitsContactListener.h" />
+    <ClInclude Include="OrbitsMath.h" />
+    <ClInclude Include="ParticleManager.h" />
+    <ClInclude Include="PhysicsManager.h" />
+    <ClInclude Include="Planet.h" />
+    <ClInclude Include="PlayerShip.h" />
+    <ClInclude Include="ScreenManager.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="Slider.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="StartScreen.h" />
+    <ClInclude Include="TextureManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
