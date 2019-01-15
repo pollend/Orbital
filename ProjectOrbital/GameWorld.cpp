@@ -1,7 +1,7 @@
 #include "GameWorld.h"
 #include "OrbitsMath.h"
 #include "MusicManager.h"
-#include "ParticleManager.h"
+#include "../source/game/ParticleManager.h"
 #include "TextureManager.h"
 #include "Notification.h"
 

@@ -1,6 +1,6 @@
 #pragma once
 #include "IScreen.h"
-#include "Slider.h"
+#include "../source/gui/elements/Slider.h"
 #include "Btn.h"
 #include "Settings.h"
 class OptionsMenu: public IScreen

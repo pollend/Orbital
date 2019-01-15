@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include "GameObject.h"
-#include "PhysicsManager.h"
+#include "../source/game/PhysicsManager.h"
 
 // Forward declarations to avoid circular includes.
 class Asteroid;

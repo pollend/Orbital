@@ -1,8 +1,8 @@
 #include <iostream>
 #include "Asteroid.h"
 #include "Harpoon.h"
-#include "PlayerShip.h"
-#include "ParticleManager.h"
+#include "../source/game/PlayerShip.h"
+#include "../source/game/ParticleManager.h"
 #include "SoundManager.h"
 #include "TextureManager.h"
 

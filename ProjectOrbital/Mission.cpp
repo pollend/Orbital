@@ -1,5 +1,5 @@
 #include "Mission.h"
-#include "PlayerShip.h"
+#include "../source/game/PlayerShip.h"
 #include "OrbitsMath.h"
 #include <iostream>
 

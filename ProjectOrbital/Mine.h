@@ -1,8 +1,8 @@
 #pragma once
 
 #include "GameObject.h"
-#include "PhysicsManager.h"
-#include "PlayerShip.h"
+#include "../source/game/PhysicsManager.h"
+#include "../source/game/PlayerShip.h"
 #include <SFML/Graphics.hpp>
 
 class Mine : public GameObject {

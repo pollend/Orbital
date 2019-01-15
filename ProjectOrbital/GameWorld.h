@@ -4,9 +4,9 @@
 #include "Background.h"
 #include "CollectorBeam.h"
 #include "Mine.h"
-#include "PlayerShip.h"
-#include "Planet.h"
-#include "PhysicsManager.h"
+#include "../source/game/PlayerShip.h"
+#include "../source/game/Planet.h"
+#include "../source/game/PhysicsManager.h"
 #include <SFML/Graphics.hpp>
 
 #define TEXT_BUFFER_SIZE 100

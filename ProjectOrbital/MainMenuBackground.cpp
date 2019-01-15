@@ -1,6 +1,6 @@
 #include "MainMenuBackground.h"
 #include "TextureManager.h"
-#include "ParticleManager.h"
+#include "../source/game/ParticleManager.h"
 #define NUMBER_BACKGROUND_ASTEROIDS 20
 #define DEFAULT_CAMERA_WIDTH 68
 #define FIELD_SIZE 100

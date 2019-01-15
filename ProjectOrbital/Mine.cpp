@@ -1,7 +1,7 @@
 	
 #include "Mine.h"
 #include "TextureManager.h"
-#include "ParticleManager.h"
+#include "../source/game/ParticleManager.h"
 #include "SoundManager.h"
 #include <iostream>
 

@@ -4,8 +4,8 @@
 #include "GameScreenHud.h"
 #include "StartScreen.h"
 #include "CompletionScreen.h"
-#include "GameOverScreen.h"
-#include "ParticleManager.h"
+#include "../source/gui/screens/GameOverScreen.h"
+#include "../source/game/ParticleManager.h"
 #include "Settings.h"
 #include <iostream>
 

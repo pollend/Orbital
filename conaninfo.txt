@@ -1,0 +1,68 @@
+[settings]
+    arch=x86_64
+    build_type=Release
+    compiler=gcc
+    compiler.libcxx=libstdc++
+    compiler.version=8
+    os=Linux
+
+[requires]
+    eigen/3.Y.Z
+    gtest/1.Y.Z
+    sfml/2.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    arch_build=x86_64
+    build_type=Release
+    compiler=gcc
+    compiler.libcxx=libstdc++
+    compiler.version=8
+    os=Linux
+    os_build=Linux
+
+[full_requires]
+    bzip2/1.0.6@conan/stable:1d877a3df840030e6a8abb74c5ffb9088d08b47a
+    eigen/3.3.5@conan/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    freetype/2.9.0@bincrafters/stable:876d4331adf573973aca1cbdf6614fdd41b8c51e
+    gtest/1.8.1@bincrafters/stable:eea471029afd178285a9408339b804914029020f
+    libpng/1.6.34@bincrafters/stable:4f75e4b120320a9fb6ac0012242d9ac95d18b6f6
+    sfml/2.5.0@bincrafters/stable:9dc4e4f9baf8bd09bd676bc54e0fc7ab2b30e127
+    stb/20180214@conan/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    zlib/1.2.11@conan/stable:1d877a3df840030e6a8abb74c5ffb9088d08b47a
+
+[full_options]
+    bzip2:fPIC=True
+    bzip2:shared=False
+    eigen:EIGEN_USE_BLAS=False
+    eigen:EIGEN_USE_LAPACKE=False
+    eigen:EIGEN_USE_LAPACKE_STRICT=False
+    freetype:fPIC=True
+    freetype:shared=False
+    freetype:with_bzip2=True
+    freetype:with_png=True
+    freetype:with_zlib=True
+    gtest:build_gmock=True
+    gtest:fPIC=True
+    gtest:no_main=False
+    gtest:shared=False
+    libpng:fPIC=True
+    libpng:shared=False
+    sfml:audio=False
+    sfml:fPIC=True
+    sfml:graphics=True
+    sfml:network=False
+    sfml:shared=False
+    sfml:window=True
+    zlib:fPIC=True
+    zlib:minizip=False
+    zlib:shared=False
+
+[recipe_hash]
+
+
+[env]
+
