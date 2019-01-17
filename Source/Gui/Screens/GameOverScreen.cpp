@@ -1,6 +1,6 @@
 #include "GameOverScreen.h"
-#include "../../../ProjectOrbital/TextureManager.h"
-#include "../../../ProjectOrbital/ScreenManager.h"
+#include "Game/TextureManager.h"
+#include "Gui/ScreenManager.h"
 GameOverScreen::GameOverScreen(GameWorld* GameWorld)
 {
 	mGameWorld = GameWorld;

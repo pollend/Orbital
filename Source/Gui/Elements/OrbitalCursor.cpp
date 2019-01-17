@@ -1,11 +1,11 @@
-#include "Cursor.h"
+#include "OrbitalCursor.h"
 #include "Game/TextureManager.h"
 
 using namespace sf;
 
 const float CURSOR_SIZE = 30.0f;
 
-Cursor::Cursor() {
+OrbitalCursor::OrbitalCursor() {
 	Texture* texture = TextureManager::LoadAndRetrieveTexture("Assets\\cursor.png");
 	cursorSprite.setTexture(*texture);
 	cursorSprite.setOrigin(texture->getSize().x / 2.0f, texture->getSize().y / 2.0f);
@@ -13,11 +13,11 @@ Cursor::Cursor() {
 	cursorSprite.setScale(scale, scale);
 }
 
-Cursor::~Cursor() {
+OrbitalCursor::~OrbitalCursor() {
 }
 
-void Cursor::draw(RenderWindow* window) {
-	Vector2f pos = window->convertCoords(Mouse::getPosition(*window));
+void OrbitalCursor::draw(RenderWindow* window) {
+	Vector2f pos = window->mapPixelToCoords(Mouse::getPosition(*window));
 	cursorSprite.setPosition(pos);
 	window->draw(cursorSprite);
 }

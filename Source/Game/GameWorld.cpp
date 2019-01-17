@@ -1,9 +1,9 @@
 #include "GameWorld.h"
 #include "Utility/OrbitsMath.h"
 #include "MusicManager.h"
-#include "../source/game/ParticleManager.h"
+#include "Game/ParticleManager.h"
 #include "TextureManager.h"
-#include "Gui/elements/Notification.h"
+#include "Gui/Elements/Notification.h"
 
 #include <iostream>
 #include <stdio.h>

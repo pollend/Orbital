@@ -1,8 +1,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <vector>
-#include "Game/entities/GameObject.h"
-#include "../source/game/PhysicsManager.h"
+#include "Game/Entities/GameObject.h"
+#include "Game/PhysicsManager.h"
 
 // Forward declarations to avoid circular includes.
 class Asteroid;

@@ -1,7 +1,7 @@
 #pragma once
-#include "Gui/screens/IScreen.h"
-#include "../source/gui/elements/Slider.h"
-#include "Gui/elements/Btn.h"
+#include "Gui/Screens/IScreen.h"
+#include "Gui/Elements/Slider.h"
+#include "Gui/Elements/Btn.h"
 class StartScreen : public IScreen
 {
 	public:

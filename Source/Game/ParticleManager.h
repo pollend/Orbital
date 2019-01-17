@@ -1,6 +1,6 @@
 #pragma once
 #include "PlayerShip.h"
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include <list>
 
 class Particle

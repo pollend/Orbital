@@ -1,7 +1,7 @@
 #include "Asteroid.h"
 #include "Utility/OrbitsMath.h"
 #include "Game/SoundManager.h"
-#include "../source/game/ParticleManager.h"
+#include "Game/ParticleManager.h"
 #include <stdlib.h>
 #include <math.h>
 #include <iostream>

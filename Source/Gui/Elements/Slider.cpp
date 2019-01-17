@@ -37,7 +37,7 @@ void Slider::setPercent(float percent) {
 void Slider::Update(sf::RenderWindow* Window)
 {
 	//mouse is in the box
-	if(mSlideBar.getGlobalBounds().contains(Window->convertCoords(sf::Mouse::getPosition((*Window)))) || mLockMouse)
+	if(mSlideBar.getGlobalBounds().contains(Window->mapPixelToCoords(sf::Mouse::getPosition((*Window)))) || mLockMouse)
 	{
 		if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
 		{

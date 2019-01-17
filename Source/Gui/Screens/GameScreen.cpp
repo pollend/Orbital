@@ -1,11 +1,11 @@
 #include "GameScreen.h"
 #include "Gui/ScreenManager.h"
-#include "Gui/screens/GameScreenMenu.h"
+#include "Gui/Screens/GameScreenMenu.h"
 #include "GameScreenHud.h"
 #include "StartScreen.h"
-#include "Gui/screens/CompletionScreen.h"
-#include "../source/gui/screens/GameOverScreen.h"
-#include "../source/game/ParticleManager.h"
+#include "Gui/Screens/CompletionScreen.h"
+#include "Gui/Screens/GameOverScreen.h"
+#include "Game/ParticleManager.h"
 #include "Game/Settings.h"
 #include <iostream>
 

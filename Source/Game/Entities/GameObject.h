@@ -1,7 +1,7 @@
 #pragma once
 
-#include <SFML\Graphics.hpp>
-#include <Box2D\Box2D.h>
+#include <SFML/Graphics.hpp>
+#include <Box2D/Box2D.h>
 #include "Utility/OrbitsMath.h"
 
 // All physical game objects that adhere to physics should derive from this class

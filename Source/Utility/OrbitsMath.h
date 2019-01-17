@@ -2,7 +2,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include <Box2D\Box2D.h>
+#include <Box2D/Box2D.h>
 
 extern const double PI, PI_OVER2;
 

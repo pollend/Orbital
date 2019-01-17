@@ -1,6 +1,6 @@
 #pragma once
 #include "IScreen.h"
-#include "Gui/elements/Btn.h"
+#include "Gui/Elements/Btn.h"
 class HelpScreen : public IScreen
 {
 public:

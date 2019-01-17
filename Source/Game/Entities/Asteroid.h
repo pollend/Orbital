@@ -1,9 +1,9 @@
 #pragma once
 
 #include "GameObject.h"
-#include "../source/game/PhysicsManager.h"
-#include "../source/game/PlayerShip.h"
-#include "../source/game/Planet.h"
+#include "Game/PhysicsManager.h"
+#include "Game/PlayerShip.h"
+#include "Game/Planet.h"
 #include <SFML/Graphics.hpp>
 
 #define TEXT_BUFFER_SIZE 100

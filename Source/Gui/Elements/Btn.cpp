@@ -58,18 +58,17 @@ void Btn::SetPosition(sf::Vector2f Position)
 	Btn::mBtnSprite.setPosition(Position);
 }
 
-bool Btn::IsMousePositionIntersectingButton(sf::RenderWindow* Window)
-{
-	
+bool Btn::IsMousePositionIntersectingButton(sf::RenderWindow* Window) {
+
 	//memory varaibles
-	sf::Vector2u lBtnSize =Btn::mBtnReleased->getSize();
-	sf::Vector2f lBtnPosition = Btn::mBtnSprite.getPosition() ;
-	sf::Vector2f lMousePosition =Window->convertCoords(sf::Mouse::getPosition((*Window)));
-	
+	sf::Vector2u lBtnSize = Btn::mBtnReleased->getSize();
+	sf::Vector2f lBtnPosition = Btn::mBtnSprite.getPosition();
+	sf::Vector2f lMousePosition = Window->mapPixelToCoords(sf::Mouse::getPosition(*Window));
+
 
 	//checks if the mouse is intersecting the button
-	if(lMousePosition.x > lBtnPosition.x && lMousePosition.x < lBtnPosition.x +lBtnSize.x && lMousePosition.y > lBtnPosition.y && lMousePosition.y < lBtnPosition.y +lBtnSize.y)
-	{
+	if (lMousePosition.x > lBtnPosition.x && lMousePosition.x < lBtnPosition.x + lBtnSize.x &&
+		lMousePosition.y > lBtnPosition.y && lMousePosition.y < lBtnPosition.y + lBtnSize.y) {
 		return true;
 	}
 

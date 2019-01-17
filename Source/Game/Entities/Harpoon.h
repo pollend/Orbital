@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Game/entities/GameObject.h"
-#include "../source/game/PhysicsManager.h"
+#include "Game/Entities/GameObject.h"
+#include "Game/PhysicsManager.h"
 #include <SFML/Graphics.hpp>
 
 class PlayerShip;

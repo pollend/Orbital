@@ -1,7 +1,7 @@
 #include "CollectorBeam.h"
-#include "Game/entities/Asteroid.h"
-#include "../source/game/PlayerShip.h"
-#include "../source/game/ParticleManager.h"
+#include "Game/Entities/Asteroid.h"
+#include "Game/PlayerShip.h"
+#include "Game/ParticleManager.h"
 #include "Utility/OrbitsMath.h"
 
 #define BEAM_RADIUS		 20.0f

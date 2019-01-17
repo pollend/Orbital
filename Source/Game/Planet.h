@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../../ProjectOrbital/GameObject.h"
-#include "../../ProjectOrbital/Mission.h"
+#include "Game/Entities/GameObject.h"
+#include "Game/Mission.h"
 #include "PhysicsManager.h"
 #include <SFML/Graphics.hpp>
 

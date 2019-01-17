@@ -1,5 +1,5 @@
 #include "ParticleManager.h"
-#include "../../ProjectOrbital/OrbitsMath.h"
+#include "Utility/OrbitsMath.h"
 #include <iostream>
 
 using namespace sf;

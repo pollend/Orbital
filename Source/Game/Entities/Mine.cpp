@@ -1,7 +1,7 @@
 	
 #include "Mine.h"
 #include "Game/TextureManager.h"
-#include "../source/game/ParticleManager.h"
+#include "Game/ParticleManager.h"
 #include "Game/SoundManager.h"
 #include <iostream>
 
@@ -120,7 +120,7 @@ void Mine::handleCollision(GameObject* objectHit, const sf::Vector2f& contactPoi
 			float speed = (float)((MAX_PUSH_DIST - dist) / MAX_PUSH_DIST) * MAX_PUSH;
 			std::cout << "mine push player speed = " << speed << "\n";
 			b2Vec2 dir = getB2Vector( getNormalized(playerShip->getPosition() - getPosition()) * speed );
-			playerShip->getPhysicsBody()->ApplyLinearImpulse(dir, playerShip->getPhysicsBody()->GetWorldCenter());
+			playerShip->getPhysicsBody()->ApplyLinearImpulse(dir, playerShip->getPhysicsBody()->GetWorldCenter(),true);
 		}
 
 		mineState = MINE_EXPLODING;

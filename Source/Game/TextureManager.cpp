@@ -1,5 +1,5 @@
 #include "TextureManager.h"
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 
  std::map<std::string, sf::Texture*> TextureManager::mTextures;
 

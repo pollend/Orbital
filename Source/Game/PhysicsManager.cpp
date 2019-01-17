@@ -1,7 +1,7 @@
 #include <iostream>
 #include "PhysicsManager.h"
-#include "../../ProjectOrbital/OrbitsMath.h"
-#include "../../ProjectOrbital/Harpoon.h"
+#include "Utility/OrbitsMath.h"
+#include "Game/Entities/Harpoon.h"
 
 // these masks are used to control what collides with what
 uint16 PLAYER_SHIP_MASK  = 0x01,

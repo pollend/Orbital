@@ -1,7 +1,7 @@
 #include "PlayerShip.h"
 #include "ParticleManager.h"
-#include "../../ProjectOrbital/OrbitsMath.h"
-#include "../../ProjectOrbital/SoundManager.h"
+#include "Utility/OrbitsMath.h"
+#include "Game/SoundManager.h"
 #include <iostream>
 
 using namespace sf;
@@ -162,7 +162,7 @@ void PlayerShip::Update(float delta) {
 		// gravity = coefficient / distance^2 (we could uses masses but it would end up being nearly constant anyways, and this is easier to control)
 		Vector2f toPlanet = homePlanet->getPosition() - getPosition();
 		float g = (float)(getGravityMagnitude() * delta);						
-		physicsBody->ApplyLinearImpulse(getB2Vector( getNormalized( toPlanet ) * g ), physicsBody->GetWorldCenter());
+		physicsBody->ApplyLinearImpulse(getB2Vector( getNormalized( toPlanet ) * g ), physicsBody->GetWorldCenter(),true);
 	
 		// update docking procedures
 		updateDocking(delta);			
@@ -207,7 +207,7 @@ void PlayerShip::Draw(sf::RenderWindow* Window) {
 	
 	Window->draw(ship);				// player ship
 
-	mouseWorldCoordinates = Window->convertCoords(Mouse::getPosition(*Window));
+	mouseWorldCoordinates = Window->mapPixelToCoords(Mouse::getPosition(*Window));
 }
 
 // looks for input and controls ship acceleration
@@ -265,11 +265,11 @@ void PlayerShip::updateThrusters(float delta) {
 	}
 
 	if (leftThrustOn && rightThrustOn) 
-		physicsBody->ApplyLinearImpulse(thrust2, midPoint);			// both thrusters
+		physicsBody->ApplyLinearImpulse(thrust2, midPoint,true);			// both thrusters
 	else if (leftThrustOn)
-		physicsBody->ApplyLinearImpulse(thrust, rightPoint);		// left thruster
+		physicsBody->ApplyLinearImpulse(thrust, rightPoint,true);		// left thruster
 	else if (rightThrustOn)
-		physicsBody->ApplyLinearImpulse(thrust, leftPoint);			// right thruster
+		physicsBody->ApplyLinearImpulse(thrust, leftPoint,true);			// right thruster
 
 	// add particles as the engine exhaust, and update sounds
 	addThrusterParticles(delta, leftThrustOn, rightThrustOn);
@@ -315,7 +315,7 @@ double PlayerShip::getGravityMagnitude() {
 
 void PlayerShip::handleCollision(GameObject* objectHit, const Vector2f& contactPoint)
 {
-	std::cout << "Ship collided with object# " << (int)objectHit << 
+	std::cout << "Ship collided with object# " << objectHit <<
 	"\nShip Position: " << physicsBody->GetWorldCenter().x << ", " << physicsBody->GetWorldCenter().y <<
 	"\nShip Speed: " << physicsBody->GetLinearVelocity().Length() << 
 	"\nShip Velocity: (x: " << physicsBody->GetLinearVelocity().x << " y: " << physicsBody->GetLinearVelocity().y <<

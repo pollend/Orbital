@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../source/game/PlayerShip.h"
+#include "Game/PlayerShip.h"
 #include <SFML/Graphics.hpp>
 
 

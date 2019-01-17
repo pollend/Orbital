@@ -1,7 +1,7 @@
 #pragma once
-#include "../source/game/PhysicsManager.h"
-#include "Gui/screens/IScreen.h"
-#include "Game/entities/Asteroid.h"
+#include "Game/PhysicsManager.h"
+#include "Gui/Screens/IScreen.h"
+#include "Game/Entities/Asteroid.h"
 #include "Game/Background.h"
 class MainMenuBackground: public IScreen
 {

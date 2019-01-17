@@ -1,17 +1,17 @@
 
 #include <iostream>
-#include <SFML\Audio.hpp>
+#include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
-#include "game/PhysicsManager.h"
-#include "../ProjectOrbital/ScreenManager.h"
-#include "game/ParticleManager.h"
-#include "../ProjectOrbital/StartScreen.h"
-#include "../ProjectOrbital/SoundManager.h"
-#include "../ProjectOrbital/MusicManager.h"
-#include "../ProjectOrbital/GameScreen.h"
-#include "../ProjectOrbital/MainMenuBackground.h"
-#include "../ProjectOrbital/Settings.h"
-#include "../ProjectOrbital/Cursor.h"
+#include "Game/PhysicsManager.h"
+#include "Gui/ScreenManager.h"
+#include "Game/ParticleManager.h"
+#include "Gui/Screens/StartScreen.h"
+#include "Game/SoundManager.h"
+#include "Game//MusicManager.h"
+#include "Gui/Screens/GameScreen.h"
+#include "Gui/Screens/MainMenuBackground.h"
+#include "Game/Settings.h"
+#include "Gui/Elements/OrbitalCursor.h"
 #define SCREEN_WIDTH	1024
 #define SCREEN_HEIGHT	768
 #define BITS_PER_PIXEL	32
@@ -24,7 +24,7 @@ int main()
 
 	sf::RenderWindow* Window = new sf::RenderWindow(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT, BITS_PER_PIXEL), "Momentus");
 	Window->setMouseCursorVisible(false);
-	Cursor mouseCursor;
+	OrbitalCursor mouseCursor;
 	bool   lostFocus = false;
 
 	//loads the music manager and sets up the tracks

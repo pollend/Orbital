@@ -1,6 +1,6 @@
 #pragma once
-#include "iscreen.h"
-#include "../../../ProjectOrbital/GameWorld.h"
+#include "Gui/Screens/IScreen.h"
+#include "Game/GameWorld.h"
 class GameOverScreen :public IScreen
 {
 public:

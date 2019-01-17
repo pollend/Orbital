@@ -1,5 +1,5 @@
 #include "ScreenManager.h"
-#include "Gui/screens/IScreen.h"
+#include "Gui/Screens/IScreen.h"
 
 ScreenManager::~ScreenManager(void)
 {

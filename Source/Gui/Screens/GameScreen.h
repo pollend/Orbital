@@ -1,7 +1,7 @@
 #pragma once
 #include "IScreen.h"
-#include "GameWorld.h"
-#include <SFML\System\Vector2.hpp>
+#include "Game/GameWorld.h"
+#include <SFML/System/Vector2.hpp>
 /*Michael Pollind*/
 class GameScreen :public IScreen
 {

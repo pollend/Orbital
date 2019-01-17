@@ -1,5 +1,5 @@
 #include <Box2D/Box2D.h>
-#include "Game/entities/GameObject.h"
+#include "Game/Entities/GameObject.h"
 
 class OrbitsContactListener : public b2ContactListener
 {

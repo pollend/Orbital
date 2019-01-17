@@ -6,7 +6,7 @@
 class Settings
 {
 public:
-	 static enum TypeOfSettings{
+	enum TypeOfSettings{
 		SOUND_VOLUME,
 		MUSIC_VOLUME
 	};

@@ -1,12 +1,12 @@
 #pragma once
 
-#include "Game/entities/Asteroid.h"
+#include "Game/Entities/Asteroid.h"
 #include "Game/Background.h"
 #include "Game/CollectorBeam.h"
 #include "Game/Entities/Mine.h"
-#include "../source/game/PlayerShip.h"
-#include "../source/game/Planet.h"
-#include "../source/game/PhysicsManager.h"
+#include "Game/PlayerShip.h"
+#include "Game/Planet.h"
+#include "Game/PhysicsManager.h"
 #include <SFML/Graphics.hpp>
 
 #define TEXT_BUFFER_SIZE 100

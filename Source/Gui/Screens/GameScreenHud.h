@@ -1,7 +1,7 @@
 #pragma once
 #include "IScreen.h"
 #include "Game/GameWorld.h"
-#include "Gui/elements/Notification.h"
+#include "Gui/Elements/Notification.h"
 
 class GameScreenHud :public IScreen
 {

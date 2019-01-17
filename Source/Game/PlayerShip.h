@@ -1,10 +1,10 @@
 #pragma once
-#include "../../ProjectOrbital/GameObject.h"
+#include "Game/Entities/GameObject.h"
 #include "PhysicsManager.h"
 #include "Planet.h"
-#include "../../ProjectOrbital/Harpoon.h"
-#include "../../ProjectOrbital/CollectorBeam.h"
-#include "../../ProjectOrbital/Notification.h"
+#include "Game/Entities/Harpoon.h"
+#include "Game/CollectorBeam.h"
+#include "Gui/Elements/Notification.h"
 #include <SFML/Graphics.hpp>
 
 extern const int	   NUM_RESOURCE_TYPES;

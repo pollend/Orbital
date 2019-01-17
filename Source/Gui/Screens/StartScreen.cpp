@@ -1,11 +1,11 @@
 #include "StartScreen.h"
 #include "Gui/ScreenManager.h"
-#include "Gui/screens/GameScreen.h"
+#include "Gui/Screens/GameScreen.h"
 #include <iostream>
 #include "Game/Settings.h"
 #include "Game/TextureManager.h"
-#include "Gui/screens/OptionsMenu.h"
-#include "Gui/screens/HelpScreen.h"
+#include "Gui/Screens/OptionsMenu.h"
+#include "Gui/Screens/HelpScreen.h"
 
 void StartScreen::Load(ScreenManager* ScreenManager)
 {

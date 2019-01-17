@@ -1,8 +1,7 @@
 #pragma once
 
-#include <SFML\Graphics.hpp>
-
-class Cursor
+#include <SFML/Graphics.hpp>
+class OrbitalCursor
 {
 	private :
 
@@ -10,8 +9,8 @@ class Cursor
 
 	public :
 
-		Cursor();
-		~Cursor();
+		OrbitalCursor();
+		~OrbitalCursor();
 		void draw(sf::RenderWindow* window);
 
 };
