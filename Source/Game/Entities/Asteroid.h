@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ORBITAL_ASTEROID
+#define ORBITAL_ASTEROID
 
 #include "GameObject.h"
 #include "Game/PhysicsManager.h"
@@ -39,3 +40,5 @@ class Asteroid : public GameObject {
 		int	  resourceCount;			// amount of resources asteroid has currently
 
 };
+
+#endif

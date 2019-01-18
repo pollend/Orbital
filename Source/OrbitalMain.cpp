@@ -1,3 +1,5 @@
+#ifndef ORBITAL_MAIN
+#define ORBITAL_MAIN
 
 #include <iostream>
 #include <SFML/Audio.hpp>
@@ -33,15 +35,15 @@ int main()
 	SoundManager::load();
 	//load the particle manager
 	ParticleManager::load();
-	
+
 	// used to compute fps
 	sf::Clock clock;
 	sf::Time lElapsedTime = clock.getElapsedTime();
-	sf::Time fpsTime = clock.getElapsedTime();				
+	sf::Time fpsTime = clock.getElapsedTime();
 	int numFrames = 0;
 
 	// seed the random-number generator
-	srand((unsigned int)time(NULL));	
+	srand((unsigned int)time(NULL));
 
 	ScreenManager*screenManager = new ScreenManager();
 	screenManager->AddScreen(new MainMenuBackground());
@@ -107,7 +109,7 @@ int main()
 		screenManager->Draw(Window);
 		mouseCursor.draw(Window);
 		Window->display();
-		
+
 	}
 
 	delete screenManager;
@@ -115,7 +117,7 @@ int main()
 	ParticleManager::destroy();
 	SoundManager::destroy();
 	MusicManager::Destroy();
-	
+
 	screenManager = 0;
 	Window = 0;
 
@@ -133,3 +135,5 @@ void DisplayFPS(int& numFrames, sf::Time& elapsedTime, sf::Time& fpsTime)
 		numFrames = 0;
 	}
 }
+
+#endif
